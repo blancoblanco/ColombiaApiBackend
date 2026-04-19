@@ -1,0 +1,13 @@
+com\ColombiaApi\jumatabaCo\controller\MunicipioController.class
+com\ColombiaApi\jumatabaCo\JumatabaCoApplication.class
+com\ColombiaApi\jumatabaCo\model\CoeficienteAa.class
+com\ColombiaApi\jumatabaCo\model\Municipio.class
+com\ColombiaApi\jumatabaCo\model\CoeficienteAe.class
+com\ColombiaApi\jumatabaCo\model\CoeficienteAv.class
+com\ColombiaApi\jumatabaCo\model\AmenazaSismica.class
+com\ColombiaApi\jumatabaCo\model\CoeficienteAd.class
+com\ColombiaApi\jumatabaCo\controller\DepartamentoController.class
+com\ColombiaApi\jumatabaCo\Repository\JpaMunicipioRepository.class
+com\ColombiaApi\jumatabaCo\exeption\ResourceNotFoundException.class
+com\ColombiaApi\jumatabaCo\model\Departamento.class
+com\ColombiaApi\jumatabaCo\Repository\JpaDepartamentoRepository.class
