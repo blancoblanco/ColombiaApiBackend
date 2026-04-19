@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-@CrossOrigin(origins ="http://localhost:5173")
+@CrossOrigin(origins ="${ALLOWED_ORIGINS:http://localhost:5173}")
 @RestController
 @RequestMapping("/apiCo/v1/municipios")
 public class MunicipioController {
