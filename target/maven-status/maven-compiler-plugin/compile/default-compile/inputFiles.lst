@@ -1,7 +1,16 @@
+C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\config\ApplicationConfig.java
+C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\config\SecurityConfig.java
+C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\controller\AuthController.java
+C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\controller\AuthService.java
 C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\controller\DepartamentoController.java
 C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\controller\MunicipioController.java
+C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\dto\AuthResponse.java
+C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\dto\LoginRequest.java
+C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\dto\RegisterRequest.java
 C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\exeption\ResourceNotFoundException.java
 C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\JumatabaCoApplication.java
+C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\jwt\JwtAuthenticationFilter.java
+C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\jwt\JwtService.java
 C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\model\AmenazaSismica.java
 C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\model\CoeficienteAa.java
 C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\model\CoeficienteAd.java
@@ -9,5 +18,8 @@ C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\Colombia
 C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\model\CoeficienteAv.java
 C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\model\Departamento.java
 C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\model\Municipio.java
+C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\model\Rol.java
+C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\model\Usuario.java
 C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\Repository\JpaDepartamentoRepository.java
 C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\Repository\JpaMunicipioRepository.java
+C:\Users\Juan Tarazona\Desktop\apiColombia\jumatabaCo\src\main\java\com\ColombiaApi\jumatabaCo\Repository\JpaUserRepository.java

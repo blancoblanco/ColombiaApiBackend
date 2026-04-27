@@ -24,16 +24,16 @@ public class AuthService {
     private final AuthenticationManager authenticationManager;
 
     public AuthResponse login(LoginRequest request) {
-        authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(request.getNombre(),
-                request.getContraseña()));
+        authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(request.getNombre(), request.getContrasena()));
+        
         UserDetails user = jpaUserRepository.findByNombre(request.getNombre())
-                .orElseThrow();
-        String token=jwtService.getToken(user);
-        return  AuthResponse.builder().token(token).build();
+                .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
+        
+        String token = jwtService.getToken(user);
+        return AuthResponse.builder().token(token).build();
     }
 
     public AuthResponse register(RegisterRequest request) {
-
         Usuario usuario = Usuario.builder()
                 .nombre(request.getNombre())
                 .contrasena(passwordEncoder.encode(request.getContrasena()))
@@ -46,5 +46,4 @@ public class AuthService {
                 .token(jwtService.getToken(usuario))
                 .build();
     }
-
 }
