@@ -19,7 +19,7 @@ import java.util.function.Function;
 @Service
 public class JwtService {
 
-    @Value("${jwtSecretKey}")
+    @Value("${jwt.secret.key}")
     public String SECRET_KEY;
 
     public String getToken(UserDetails user) {
