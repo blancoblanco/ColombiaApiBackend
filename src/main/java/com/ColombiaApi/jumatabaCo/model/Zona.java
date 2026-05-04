@@ -27,7 +27,7 @@ public class Zona {
     private double tc;
     private double tl;
     private double a0;
-    private double t0;
+    private Double t0;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_microzonificacion")
