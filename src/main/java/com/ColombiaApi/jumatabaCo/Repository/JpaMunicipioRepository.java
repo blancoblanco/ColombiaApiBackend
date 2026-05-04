@@ -1,6 +1,6 @@
 package com.ColombiaApi.jumatabaCo.Repository;
 
-import com.ColombiaApi.jumatabaCo.model.AmenazaSismica;
+import com.ColombiaApi.jumatabaCo.model.coeficientes.AmenazaSismica;
 import com.ColombiaApi.jumatabaCo.model.Municipio;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

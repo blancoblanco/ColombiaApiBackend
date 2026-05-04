@@ -1,9 +1,12 @@
 package com.ColombiaApi.jumatabaCo.model;
 
+import com.ColombiaApi.jumatabaCo.model.coeficientes.*;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -23,19 +26,19 @@ public class Municipio {
     @Enumerated(EnumType.STRING)
     private AmenazaSismica amenazaSismica;
 
-    @Enumerated(EnumType.STRING)
-    private CoeficienteAa aa;
+    private double aa;
 
-    @Enumerated(EnumType.STRING)
-    private CoeficienteAv av;
+    private double av;
 
-    @Enumerated(EnumType.STRING)
-    private CoeficienteAe ae;
+    private double ae;
 
-    @Enumerated(EnumType.STRING)
-    private CoeficienteAd ad;
+    private double ad;
 
     @ManyToOne
     @JoinColumn(name = "id_departamento")
     private Departamento departamento;
+
+
+    @OneToMany(mappedBy = "municipio")
+    private List<Microzonificacion> microzonificaciones;
 }

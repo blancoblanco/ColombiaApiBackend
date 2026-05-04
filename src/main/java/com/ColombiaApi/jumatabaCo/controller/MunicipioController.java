@@ -4,7 +4,7 @@ import com.ColombiaApi.jumatabaCo.Repository.JpaMunicipioRepository;
 
 import com.ColombiaApi.jumatabaCo.exeption.ResourceNotFoundException;
 
-import com.ColombiaApi.jumatabaCo.model.AmenazaSismica;
+import com.ColombiaApi.jumatabaCo.model.coeficientes.AmenazaSismica;
 import com.ColombiaApi.jumatabaCo.model.Municipio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 @CrossOrigin(origins ="${ALLOWED_ORIGINS:http://localhost:5173}")
 @RestController

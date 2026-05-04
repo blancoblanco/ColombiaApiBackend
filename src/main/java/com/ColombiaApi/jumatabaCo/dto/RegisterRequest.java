@@ -1,5 +1,6 @@
 package com.ColombiaApi.jumatabaCo.dto;
 
+import com.ColombiaApi.jumatabaCo.model.Rol;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,4 +14,5 @@ public class RegisterRequest {
     String nombre;
     String contrasena;
     String correo;
+
 }
