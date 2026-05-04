@@ -62,6 +62,7 @@ public class ZonaController {
         zona.setTc(zonaRequest.getTc());
         zona.setTl(zonaRequest.getTl());
         zona.setA0(zonaRequest.getA0());
+        zona.setT0(zonaRequest.getT0());
         Zona zonaActualizada=jpaZonaRepository.save(zona);
         return ResponseEntity.ok(zonaActualizada);
     }
