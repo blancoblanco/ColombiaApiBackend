@@ -1,6 +1,7 @@
 package com.ColombiaApi.jumatabaCo.model;
 
 import com.ColombiaApi.jumatabaCo.model.coeficientes.*;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,6 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @Table(name = "municipio")
+@JsonIgnoreProperties({"microzonificaciones", "hibernateLazyInitializer"})
 public class Municipio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

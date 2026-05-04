@@ -13,7 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @Table(name = "departamento")
-@JsonIgnoreProperties("municipios")
+@JsonIgnoreProperties({"municipios", "hibernateLazyInitializer"})
 public class Departamento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

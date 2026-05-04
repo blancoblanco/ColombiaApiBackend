@@ -1,5 +1,7 @@
 package com.ColombiaApi.jumatabaCo.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -13,7 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @Table(name = "microzonificacion")
-@JsonIgnoreProperties("zonas")
+@JsonIgnoreProperties( "hibernateLazyInitializer")
 public class Microzonificacion {
 
     @Id
@@ -23,9 +25,10 @@ public class Microzonificacion {
     private String nombre;
 
     @OneToMany(mappedBy = "microzonificacion")
+    @JsonIgnore
     private List<Zona> zonas;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_municipio", nullable = true)
     private Municipio municipio;
 

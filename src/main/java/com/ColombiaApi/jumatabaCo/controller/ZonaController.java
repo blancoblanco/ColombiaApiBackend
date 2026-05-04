@@ -27,8 +27,8 @@ public class ZonaController {
     @GetMapping
     public List<Zona> listarZona(){
         return  jpaZonaRepository.findAll();
-
     }
+
     @GetMapping("{idZona}")
     public ResponseEntity<Zona> ListarById(@PathVariable int idZona){
         Zona zona= jpaZonaRepository.findById(idZona).orElseThrow(()->new ResourceNotFoundException("la zona con ese id no existe"));
@@ -53,8 +53,8 @@ public class ZonaController {
 
 
 
-    @PutMapping("/{idMicrozonificacion}")
-    public ResponseEntity<Zona> actualizarMicrozonificacion(@PathVariable int idZona,@RequestBody Zona zonaRequest ){
+        @PutMapping("/{idZona}")
+    public ResponseEntity<Zona> actualizarZona(@PathVariable int idZona,@RequestBody Zona zonaRequest ){
         Zona zona= jpaZonaRepository.findById(idZona).orElseThrow(()->new ResourceNotFoundException("la zona con ese id no existe"));
         zona.setZonaRespuestaSismica(zonaRequest.getZonaRespuestaSismica());
         zona.setFa(zonaRequest.getFa());

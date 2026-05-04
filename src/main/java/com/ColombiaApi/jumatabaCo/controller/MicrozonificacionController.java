@@ -23,7 +23,6 @@ public class MicrozonificacionController {
     @GetMapping
     public List<Microzonificacion> listarMicrozonificaciones(){
         return  jpaMicrozonificacionRepository.findAll();
-
     }
     @GetMapping("{idMicrozonificacion}")
     public ResponseEntity<Microzonificacion> ListarById(@PathVariable int idMicrozonificacion){
@@ -31,7 +30,7 @@ public class MicrozonificacionController {
                 return ResponseEntity.ok(microzonificacion);
     }
 
-    @GetMapping("/{idMunicipio}")
+    @GetMapping("/municipio/{idMunicipio}")
     public List<Microzonificacion> listarMicrozonificacionByIdMunicipio(@PathVariable int idMunicipio ){
         return  jpaMicrozonificacionRepository.findByMunicipio_IdMunicipio(idMunicipio);
     }

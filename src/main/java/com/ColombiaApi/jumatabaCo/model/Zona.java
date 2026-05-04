@@ -1,5 +1,7 @@
 package com.ColombiaApi.jumatabaCo.model;
 
+import com.ColombiaApi.jumatabaCo.model.coeficientes.ZonaRespuestaSismica;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,19 +14,21 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Table(name = "zona")
+@JsonIgnoreProperties({"hibernateLazyInitializer"})
 public class Zona {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Integer idZona;
 
-    private String zonaRespuestaSismica;
+    @Enumerated(EnumType.STRING)
+    private ZonaRespuestaSismica zonaRespuestaSismica;
     private double fa;
     private double fv;
     private double tc;
     private double tl;
-    private double A0;
+    private double a0;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_microzonificacion")
     private Microzonificacion microzonificacion;
 
