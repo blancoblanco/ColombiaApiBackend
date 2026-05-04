@@ -6,6 +6,7 @@ com\ColombiaApi\jumatabaCo\model\Usuario$UsuarioBuilder.class
 com\ColombiaApi\jumatabaCo\model\coeficientes\AmenazaSismica.class
 com\ColombiaApi\jumatabaCo\dto\RegisterRequest$RegisterRequestBuilder.class
 com\ColombiaApi\jumatabaCo\controller\AuthService.class
+com\ColombiaApi\jumatabaCo\model\coeficientes\ZonaRespuestaSismica.class
 com\ColombiaApi\jumatabaCo\config\SecurityConfig.class
 com\ColombiaApi\jumatabaCo\dto\RegisterRequest.class
 com\ColombiaApi\jumatabaCo\controller\AuthController.class
