@@ -2,7 +2,6 @@ package com.ColombiaApi.jumatabaCo.model;
 
 import com.ColombiaApi.jumatabaCo.model.coeficientes.ZonaRespuestaSismica;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -29,9 +28,7 @@ public class Zona {
     private double tc;
     private double tl;
     private double a0;
-    
-    @JsonProperty("t0")
-    private Double t0;
+    private double t0;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_microzonificacion")
