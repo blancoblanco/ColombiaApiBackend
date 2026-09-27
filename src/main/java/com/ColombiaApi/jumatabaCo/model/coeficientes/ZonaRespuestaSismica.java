@@ -1,6 +1,6 @@
 package com.ColombiaApi.jumatabaCo.model.coeficientes;
 
-public enum ZonaRespuestaSismica {
+public enum     ZonaRespuestaSismica {
     CERROS,
     PIEDEMONTE_A,
     PIEDEMONTE_B,
